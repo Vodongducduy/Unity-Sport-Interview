@@ -1,9 +1,10 @@
 export class Test {
+
     kiemTraChuoiDoiXung(str) {
         let lIdx = 0;
         let rIdx = str.length - 1;
         while(lIdx < rIdx) {
-            if (str[lIdx] < str[rIdx]) {
+            if (str[lIdx] !== str[rIdx]) {
                 return false;
             }
             lIdx++;

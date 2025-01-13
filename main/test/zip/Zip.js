@@ -9,7 +9,7 @@ fs.writeFileSync('data.min.json', minifiedData);
 
 const input = fs.createReadStream('data.min.json');
 
-const output = fs.createWriteStream('data.min.json.gz');
+const output = fs.createWriteStream('data.min.gz');
 
 input.pipe(zlib.createGzip()).pipe(output);
 
